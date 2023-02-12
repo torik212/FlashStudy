@@ -1,0 +1,23 @@
+[{
+    "name": "Evolution",
+    "category": "Rivers",
+    "city": "Twentynine Palms",
+    "state": "California",
+    "id": 1001,
+    "isFeatured": true,
+    "isFavorite": false,
+    "park": "Joshua Tree National Park",
+    "coordinates": {
+        "longitude": -116.166868,
+        "latitude": 34.011286
+    },
+    "description": "The process of change that has transformed.",
+    "wordset": [{
+        "word1": "cool story bro",
+        "def": "get out of here",
+        "id": 2002
+    }],
+    "imageName": "turtlerock"
+}
+
+]
