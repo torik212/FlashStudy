@@ -7,91 +7,92 @@
 
 import SwiftUI
 
-struct NoteCardFlip: View {
+struct NoteCardFlip: View  {
+    static var cardsets = ModelData().cardsets
+    @EnvironmentObject var modelData: ModelData
     @State private var showDetails = false
-    var cardset: Cardset
-    @State var counter = 0
-
+    @State private var counter = 0 // << declare counter as a State variable
+    var cardset: Cardset {
+        return NoteCardFlip.cardsets[counter % NoteCardFlip.cardsets.count]
+    } // << access the next cardset using the counter
+    
+    let menuItems = ["Biology 1", "Cards 2", "Cards 3", "Cards 4"]
+        @State private var selectedMenuItem = "Biology 1" // default selected menu item
+    
     var body: some View {
-        ZStack(alignment: .top) { // << made explicit alignment to top
-            HStack { // << moved this up to ZStack
-                Text("Click on word to see definition")
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .frame(minWidth: 10, maxWidth: .infinity, minHeight: 150)
-                    .font(.body)
-            }
-            .frame(minWidth: 0, maxHeight: 400, alignment: .topLeading)
-            VStack(spacing: 0) {
-                // let y = cardset.name
-                VStack {
-                    Button(cardset.name) {
-                        showDetails.toggle()
+        ZStack(alignment: .top) {
+            VStack(alignment: .center, spacing: 0.0) {
+                HStack(alignment:.top){
+                    Menu {
+                        Text("Select Cardset")
+                        ForEach(menuItems, id: \.self) { item in
+                            Button(item) {
+                                self.selectedMenuItem = item
+                            }
+                        }
+                        
+                    } label: {
+                        Text(selectedMenuItem)
                     }
-                    .fontWeight(.light)
-                    .font(.title)
+                    .font(.title2)
                     .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 50)
                     .padding(EdgeInsets.init(top: 0, leading: 0, bottom: 0, trailing: 0))
                     
-                    
-                    if showDetails {
-                        Text(cardset.description)
-                            .font(.largeTitle)
-                            .fontWeight(.light)
-                            .font(.title)
-                            .foregroundColor(Color.black)
-                            .padding()
-                            .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 50)
-                    }
-                    
+                }
+                .padding(.top, -300.0)
+                
+                Button(cardset.name) {
+                    showDetails.toggle()
+                }
+                .fontWeight(.light)
+                .font(.title)
+                .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 50)
+                .padding(EdgeInsets.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+                
+                if showDetails {
+                    Text(cardset.description)
+                        //.font(.title3)
+                        .fontWeight(.light)
+                        .font(.body)
+                        .foregroundColor(Color.black)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: 420)
                 }
                 
-                VStack {
-                    //Text("Counter value: \(self.counter)")
-                        //.foregroundColor(.blue)
-                    //NoteCardFlip(cardsets[4])
-                    Button(action: {
-                        self.counter += 1
-                    }) {
-                        HStack {
-                            Image(systemName: "")
-                            Text("Next Word")
+            }
+            .padding(-80.0)
+        }
+        .foregroundColor(Color.black)
+        .padding()
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
+        .offset(x: 0, y: 0)
+        .background(Color(hue: 0.733, saturation: 0.074, brightness: 0.935))
+        .gesture(DragGesture(minimumDistance: 10, coordinateSpace: .global)
+                    .onEnded({ value in
+                        if value.translation.width < 0 { // swipe left
+                            if counter < NoteCardFlip.cardsets.count - 1 {
+                                counter += 1
+                                showDetails = false
+                            }
+                        } else if value.translation.width > 0 { // swipe right
+                            if counter > 0 {
+                                counter -= 1
+                                showDetails = false
+                            }
                         }
-                        .padding(10.0)
-                        .overlay(
-                        RoundedRectangle(cornerRadius: 10.0)
-                            .stroke(lineWidth: 2.0)
-                        )
-                    }
-                    
-                }
-               //UIrec Corner
-            }
-            .foregroundColor(Color.black.opacity(0.7))
-            .padding()
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
-            .offset(x: 0, y: 0)
+                    }) )
         
-        }
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
-            .background(Color.purple.opacity(0.09))
-            .edgesIgnoringSafeArea(.all)
-            }
-
-}
-
-
-
-struct NoteCardFlip_Previews: PreviewProvider {
-    static var cardsets = ModelData().cardsets
-    static var previews: some View {
-        Group{
-            NoteCardFlip(cardset: cardsets[0])
-            NoteCardFlip(cardset: cardsets[1])
-        }
     }
 }
-func NextWord(){
-    
+struct NoteCardFlip_Previews: PreviewProvider {
+    static var cardsets = ModelData().cardsets
+    static var counter = 0
+    static var previews: some View {
+        NoteCardFlip()
+            .environmentObject(ModelData())
+            .onAppear {
+                counter = 0
+            }
+    }
 }
 

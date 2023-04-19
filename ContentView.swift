@@ -8,12 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Text("StudySets")
-                .font(.title)
-                //.padding()
-            Text("Cards")
+    @State private var counter = 0 // declare counter as a State variable
+        var cardsets = ModelData().cardsets
+        var body: some View {
+            TabView {
+                NoteCardFlip()
+                    .environmentObject(ModelData())
+                    .onAppear {
+                    counter = 0
+                }
+                    .tabItem() {
+                        Image(systemName: "note.text")
+                        Text("Flash Cards")
+                    }
+            CardsetList()
+                .environmentObject(ModelData())
+                .tabItem(){
+                    Image(systemName: "folder")
+                    Text("My Cards")
+                 }
+            newCard()
+                .tabItem(){
+                    Image(systemName: "plus")
+                    Text("New")
+                }
+            
         }
     }
 }

@@ -12,13 +12,7 @@ struct CardsetRow: View {
     
     var body: some View {
         HStack {
-            //cardset.image
-                //.resizable()
-                //.frame(width: 50, height: 50)
             Text(cardset.name)
-            //Text("\(cardset.coordinates.latitude)")
-            //Text(cardset.words.w)
-            
             Spacer()
             if cardset.isFavorite{
                 Image(systemName:"star.fill")
@@ -32,11 +26,13 @@ struct CardsetRow: View {
 struct CardsetRow_Previews: PreviewProvider {
     static var cardsets = ModelData().cardsets
     static var previews: some View {
-        Group {
-            CardsetRow(cardset: cardsets[0])
-            //CardsetRow(cardset: cardsets[1])
-           // CardsetRow(cardset: cardsets[2])
-        }
-            .previewLayout(.fixed(width:300, height: 70))
+//        Group {
+//            CardsetRow(cardset: cardsets[0])
+//            CardsetRow(cardset: cardsets[1])
+//            CardsetRow(cardset: cardsets[2])
+//        }
+        CardsetRow(cardset: cardsets[0])
+           // .environmentObject(ModelData())
+           // .previewLayout(.fixed(width:300, height: 70))
     }
 }

@@ -9,7 +9,11 @@ import Foundation
 import Combine
 
 final class ModelData: ObservableObject {
+    //@Published var cardsets: [Cardset] = load("cardData.json")
     @Published var cardsets: [Cardset] = load("cardData.json")
+    
+    //@Published var cK: [Cardset] = load("student.json")
+    
     //var hikes: [Hike] = load("hikeData.json")
         //Because you’ll never modify hike data after initially loading it,
         //you don’t need to mark it with the @Published attribute.

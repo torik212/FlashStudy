@@ -1,21 +1,21 @@
 //
-//  CardsList.swift
+//  WordsList.swift
 //  FStudy
 //
-//  Created by Tori Kestel on 2/12/23.
+//  Created by Tori Kestel on 3/20/23.
 //
 
 import SwiftUI
 
-struct CardsetList: View {
+struct WordsList: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
-
     var filteredCardsets: [Cardset] {
         modelData.cardsets.filter { cardset in
             (!showFavoritesOnly || cardset.isFavorite)
         }
     }
+    
 
     var body: some View {
         NavigationView {
@@ -23,24 +23,22 @@ struct CardsetList: View {
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites only")
                 }
-                    ForEach(filteredCardsets) { cardset in
-                        NavigationLink {
+                ForEach(filteredCardsets) { cardset in
+                    NavigationLink {
 //                            WordsetDetail(cardset: cardset, wordset: wordsets)
-                            CardsetDetail(cardset: cardset)
-                        } label: {
-                            CardsetRow(cardset: cardset)
-                        }
+                    } label: {
+                        CardsetRow(cardset: cardset)
                     }
+                }
             }
-            .navigationTitle("Cardsets")
+            .navigationTitle("Words")
         }
     }
 }
 
-struct CardsetList_Previews: PreviewProvider {
+struct WordsList_Previews: PreviewProvider {
     static var previews: some View {
-        CardsetList()
+        WordsList()
             .environmentObject(ModelData())
     }
 }
-

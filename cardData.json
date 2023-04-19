@@ -1,29 +1,24 @@
 [{
-        "name": "Word Here",
-        "category": "Rivers",
-        "city": "Twentynine Palms",
-        "state": "California",
-        "id": 1001,
-        "isFeatured": true,
-        "isFavorite": false,
-        "park": "Joshua Tree National Park",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
-        "description": "Definition Here.",
-        "words": {
-            "word": "cool story bro",
-            "def": "get out of here",
-            "id": 1.0
-        },
-        "imageName": "turtlerock"
+    "name": "Evolution",
+    "id": 1001,
+    "isFeatured": true,
+    "isFavorite": false,
+    "park": "Joshua Tree National Park",
+    "coordinates": {
+        "longitude": -116.166868,
+        "latitude": 34.011286
     },
+    "description": "The process of change that has transformed.",
+    "wordset": [{
+        "word1": "cool story bro",
+        "def": "get out of here",
+        "id": 2002,
+        "isFav": true
+    }],
+    "imageName": "turtlerock"
+},
     {
-        "name": "Word Here 2",
-        "category": "Lakes",
-        "city": "Port Alsworth",
-        "state": "Alaska",
+        "name": "Organism",
         "id": 1002,
         "isFeatured": false,
         "isFavorite": false,
@@ -32,18 +27,17 @@
             "longitude": -152.665167,
             "latitude": 59.980167
         },
-        "description": "Definition Here 2.",
-        "words": {
-            "word": "cool story bro",
-            "def": "get out of here"
-        },
+        "description": "a living thing that had the ability to act or function independently",
+        "wordset": [{
+            "word1": "cool story bro",
+            "def": "get out of here",
+            "id": 2002,
+            "isFav": true
+        }],
         "imageName": "silversalmoncreek"
     },
     {
-        "name": "Word Here 3",
-        "category": "Mountains",
-        "city": "Skagway",
-        "state": "Alaska",
+        "name": "Hydrophobic",
         "id": 1003,
         "isFeatured": false,
         "isFavorite": true,
@@ -52,18 +46,17 @@
             "longitude": -135.334571,
             "latitude": 59.560551
         },
-        "description": "Definition Here 3 ",
-        "words": {
-            "word": "cool story bro",
-            "def": "get out of here"
-        },
+        "description": "Water Fearing ",
+        "wordset": [{
+            "word1": "cool story bro",
+            "def": "get out of here",
+            "id": 2002,
+            "isFav": true
+        }],
         "imageName": "chilkoottrail"
     },
     {
-        "name": "Word Here 4",
-        "category": "Lakes",
-        "city": "Browning",
-        "state": "Montana",
+        "name": "Multicellular organisms",
         "id": 1004,
         "isFeatured": true,
         "isFavorite": true,
@@ -72,18 +65,17 @@
             "longitude": -113.536248,
             "latitude": 48.69423
         },
-        "description": "Definition Here 4",
-        "words": {
-            "word": "cool story bro",
-            "def": "get out of here"
-        },
+        "description": "plants, animals,etc. that contain many cells",
+        "wordset": [{
+            "word1": "cool story bro",
+            "def": "get out of here",
+            "id": 2002,
+            "isFav": true
+        }],
         "imageName": "stmarylake"
     },
     {
-        "name": "Word Here 5 ",
-        "category": "Lakes",
-        "city": "Twin Lakes",
-        "state": "Alaska",
+        "name": "Cell Theory",
         "id": 1005,
         "isFeatured": false,
         "isFavorite": false,
@@ -92,11 +84,13 @@
             "longitude": -153.849883,
             "latitude": 60.641684
         },
-        "description": "Definition Here 5 ",
-        "words": {
-            "word": "cool story bro",
-            "def": "get out of here"
-        },
+        "description": "All organism are composed of cells, cells are the smallest units of life, and new cells come from pre-existing cells",
+        "wordset": [{
+            "word1": "cool story bro",
+            "def": "get out of here",
+            "id": 2002,
+            "isFav": true
+        }],
         "imageName": "twinlake"
     }
 

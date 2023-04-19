@@ -27,32 +27,24 @@ struct Coordinates: Hashable, Codable {
     var latitude: Double
 
 }
-struct Words: Hashable, Codable{
-    var w: String
+struct Wordsets: Hashable, Codable, Identifiable{
+    var word1: String
     var def: String
-    var id: Double
+    var id: Int
+    var isFav: Bool
 }
 struct Cardset: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     var park: String
-    var state: String
     var description: String
     var isFavorite: Bool
 
-     var coordinates: Coordinates
-    //var words: Words
-    //var words: Words
-    // var words: [Words]
-//    var locationCoordinate: CLLocationCoordinate2D {
-//        CLLocationCoordinate2D(
-//            latitude: coordinates.latitude,
-//            longitude: coordinates.longitude)
-//    }
-//    struct Coordinates: Hashable, Codable {
-//        var latitude: Double
-//        var longitude: Double
-//    }
+    var coordinates: Coordinates
+    var wordset: [Wordsets]
+    //var wordsets: [Wordsets]
+    //var observations: [Observation]
+
 }
 
 
