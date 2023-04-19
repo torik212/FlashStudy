@@ -1,0 +1,97 @@
+[{
+    "name": "Evolution",
+    "id": 1001,
+    "isFeatured": true,
+    "isFavorite": false,
+    "park": "Joshua Tree National Park",
+    "coordinates": {
+        "longitude": -116.166868,
+        "latitude": 34.011286
+    },
+    "description": "The process of change that has transformed.",
+    "wordset": [{
+        "word1": "cool story bro",
+        "def": "get out of here",
+        "id": 2002,
+        "isFav": true
+    }],
+    "imageName": "turtlerock"
+},
+    {
+        "name": "Organism",
+        "id": 1002,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Lake Clark National Park and Preserve",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "description": "a living thing that had the ability to act or function independently",
+        "wordset": [{
+            "word1": "cool story bro",
+            "def": "get out of here",
+            "id": 2002,
+            "isFav": true
+        }],
+        "imageName": "silversalmoncreek"
+    },
+    {
+        "name": "Hydrophobic",
+        "id": 1003,
+        "isFeatured": false,
+        "isFavorite": true,
+        "park": "Klondike Gold Rush National Historical Park",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "description": "Water Fearing ",
+        "wordset": [{
+            "word1": "cool story bro",
+            "def": "get out of here",
+            "id": 2002,
+            "isFav": true
+        }],
+        "imageName": "chilkoottrail"
+    },
+    {
+        "name": "Multicellular organisms",
+        "id": 1004,
+        "isFeatured": true,
+        "isFavorite": true,
+        "park": "Glacier National Park",
+        "coordinates": {
+            "longitude": -113.536248,
+            "latitude": 48.69423
+        },
+        "description": "plants, animals,etc. that contain many cells",
+        "wordset": [{
+            "word1": "cool story bro",
+            "def": "get out of here",
+            "id": 2002,
+            "isFav": true
+        }],
+        "imageName": "stmarylake"
+    },
+    {
+        "name": "Cell Theory",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Lake Clark National Park and Preserve",
+        "coordinates": {
+            "longitude": -153.849883,
+            "latitude": 60.641684
+        },
+        "description": "All organism are composed of cells, cells are the smallest units of life, and new cells come from pre-existing cells",
+        "wordset": [{
+            "word1": "cool story bro",
+            "def": "get out of here",
+            "id": 2002,
+            "isFav": true
+        }],
+        "imageName": "twinlake"
+    }
+
+]
