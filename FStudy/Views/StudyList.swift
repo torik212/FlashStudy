@@ -9,40 +9,20 @@ import SwiftUI
 
 struct StudyList: View {
     @EnvironmentObject var modelData: ModelData
-    var [studySet] string
-    var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text(cardset.name)
-                    .font(.title)
-                FavoriteButton(isSet: $modelData.cardsets[cardsetIndex].isFavorite)
-            }
-            HStack {
-                //Text(cardset.park)
-                    //.font(.subheadline)
-                Spacer()
-                //Text(cardset.state)
-                  //  .font(.subheadline)
-            }
-            .font(.subheadline)
-            .foregroundColor(.secondary)
-            
-            Divider()
+    let studySets = ["Biology 1", "English Test 1", "Spanish Test3", "Cards 4"]
 
-            //Text("About \(cardset.name)")
-              //  .font(.title2)
-            Text(cardset.description)
-            //Text("About \(cardset.coordinates.latitude)")
-            //Text("\(cardset.wordset.debugDescription)")
-            //Text("\(cardset.wordset[0].word1)")
+    var body: some View {
+            NavigationView {
+                List {
+                    ForEach(studySets, id: \.self) { studySet in
+                        NavigationLink(destination: CardsetList(studySet: studySet)) {
+                            Text(studySet)
+                        }
+                    }
+                }
+                .navigationTitle("Study Sets")
+            }
         }
-        
-        .padding()
-    }
-    .navigationTitle(cardset.name)
-    .navigationBarTitleDisplayMode(.inline)
-}
-    }
 }
 
 struct StudyList_Previews: PreviewProvider {

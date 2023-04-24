@@ -10,12 +10,26 @@ import SwiftUI
 struct CardsetList: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
-
-    var filteredCardsets: [Cardset] {
-        modelData.cardsets.filter { cardset in
-            (!showFavoritesOnly || cardset.isFavorite)
+    let studySet: String
+    var cardsetData: [Cardset] {
+        if studySet == "English Test 1" {
+            return load("cardData2.json")
+        } else if studySet == "Biology 1"{
+            return load("cardData.json")
+        } else if studySet == "Spanish Test3"{
+            return load("cardData3.json")
+        } else if studySet == "Cards 4"{
+            return load("cardData.json")
+        }else{
+            return load("cardData.json")
         }
     }
+
+    var filteredCardsets: [Cardset] {
+           cardsetData.filter { cardset in
+               (!showFavoritesOnly || cardset.isFavorite)
+           }
+       }
 
     var body: some View {
         NavigationView {
@@ -23,24 +37,25 @@ struct CardsetList: View {
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites only")
                 }
-                    ForEach(filteredCardsets) { cardset in
-                        NavigationLink {
-//                            WordsetDetail(cardset: cardset, wordset: wordsets)
-                            CardsetDetail(cardset: cardset)
-                        } label: {
-                            CardsetRow(cardset: cardset)
-                        }
+                ForEach(filteredCardsets) { cardset in
+                    NavigationLink {
+                        CardsetDetail(cardset: cardset)
+                    } label: {
+                        CardsetRow(cardset: cardset)
                     }
+                }
             }
-            .navigationTitle("Cardsets")
+            .navigationTitle(studySet)
         }
+       // .navigationBarBackButtonHidden(true)
     }
 }
 
 struct CardsetList_Previews: PreviewProvider {
     static var previews: some View {
-        CardsetList()
+        CardsetList(studySet: "English Test 1")
             .environmentObject(ModelData())
     }
 }
+
 

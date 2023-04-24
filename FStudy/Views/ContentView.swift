@@ -21,7 +21,7 @@ struct ContentView: View {
                         Image(systemName: "note.text")
                         Text("Flash Cards")
                     }
-            CardsetList()
+            StudyList()
                 .environmentObject(ModelData())
                 .tabItem(){
                     Image(systemName: "folder")
