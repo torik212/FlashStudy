@@ -1,10 +1,10 @@
 [
   {
-    "name": "HELLO",
+    "name": "Reduce",
     "id": 1001,
     "isFeatured": true,
     "isFavorite": false,
-    "description": "The process of change that has transformed.",
+    "description": "to make or become smaller or less.",
     "wordset": [
       {
         "word1": "cool story bro",
@@ -15,11 +15,11 @@
     ]
   },
   {
-    "name": "BYE",
+    "name": "measure",
     "id": 1002,
     "isFeatured": false,
     "isFavorite": false,
-    "description": "a living thing that had the ability to act or function independently",
+    "description": "an amount or degree of something",
     "wordset": [
       {
         "word1": "cool story bro",
@@ -30,11 +30,11 @@
     ]
   },
   {
-    "name": "Hydrophobic",
+    "name": "involve",
     "id": 1003,
     "isFeatured": false,
     "isFavorite": true,
-    "description": "Water Fearing ",
+    "description": "to relate or include",
     "wordset": [
       {
         "word1": "cool story bro",
@@ -45,11 +45,11 @@
     ]
   },
   {
-    "name": "Multicellular organisms",
+    "name": "movement",
     "id": 1004,
     "isFeatured": true,
     "isFavorite": true,
-    "description": "plants, animals,etc. that contain many cells",
+    "description": "the act of moving from one place or position to another",
     "wordset": [
       {
         "word1": "cool story bro",
@@ -60,11 +60,11 @@
     ]
   },
   {
-    "name": "Cell Theory",
+    "name": "Region",
     "id": 1005,
     "isFeatured": false,
     "isFavorite": false,
-    "description": "All organism are composed of cells, cells are the smallest units of life, and new cells come from pre-existing cells",
+    "description": "an area or part of the country or body that is different from other parts",
     "wordset": [
       {
         "word1": "cool story bro",

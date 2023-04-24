@@ -12,11 +12,12 @@ struct NoteCardFlip: View  {
     @EnvironmentObject var modelData: ModelData
     @State private var showDetails = false
     @State private var counter = 0 // << declare counter as a State variable
+    @State private var cardsetData: [Cardset] = NoteCardFlip.cardsets
     var cardset: Cardset {
-        return NoteCardFlip.cardsets[counter % NoteCardFlip.cardsets.count]
+        return cardsetData[counter % cardsetData.count]
     } // << access the next cardset using the counter
     
-    let menuItems = ["Biology 1", "Cards 2", "Cards 3", "Cards 4"]
+    let menuItems = ["Biology 1", "English Test 1", "Spanish Test3", "Cards 4"]
         @State private var selectedMenuItem = "Biology 1" // default selected menu item
     
     var body: some View {
@@ -28,6 +29,19 @@ struct NoteCardFlip: View  {
                         ForEach(menuItems, id: \.self) { item in
                             Button(item) {
                                 self.selectedMenuItem = item
+                                if (item == "English Test 1"){
+                                    cardsetData = load("cardData2.json")
+                                    counter = 0 // reset the counter to start from the beginning of the new cardset
+                                    showDetails = false
+                                }else if (item == "Spanish Test3"){
+                                    cardsetData = load("cardData3.json")
+                                    counter = 0
+                                    showDetails = false
+                                }else if (item == "Biology 1"){
+                                    cardsetData = load("cardData.json")
+                                    counter = 0
+                                    showDetails = false
+                                }
                             }
                         }
                         

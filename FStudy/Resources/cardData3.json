@@ -1,10 +1,10 @@
 [
   {
-    "name": "Evolution",
+    "name": "Abogado",
     "id": 1001,
     "isFeatured": true,
     "isFavorite": false,
-    "description": "The process of change that has transformed.",
+    "description": "lawyer",
     "wordset": [
       {
         "word1": "cool story bro",
@@ -15,11 +15,11 @@
     ]
   },
   {
-    "name": "Organism",
+    "name": "bombero",
     "id": 1002,
     "isFeatured": false,
     "isFavorite": false,
-    "description": "a living thing that had the ability to act or function independently",
+    "description": "firefighter",
     "wordset": [
       {
         "word1": "cool story bro",
@@ -30,11 +30,11 @@
     ]
   },
   {
-    "name": "Hydrophobic",
+    "name": "camarero",
     "id": 1003,
     "isFeatured": false,
     "isFavorite": true,
-    "description": "Water Fearing ",
+    "description": "waiter",
     "wordset": [
       {
         "word1": "cool story bro",
@@ -45,11 +45,11 @@
     ]
   },
   {
-    "name": "Multicellular organisms",
+    "name": "cartero",
     "id": 1004,
     "isFeatured": true,
     "isFavorite": true,
-    "description": "plants, animals,etc. that contain many cells",
+    "description": "mail man",
     "wordset": [
       {
         "word1": "cool story bro",
@@ -60,11 +60,11 @@
     ]
   },
   {
-    "name": "Cell Theory",
+    "name": "escritor",
     "id": 1005,
     "isFeatured": false,
     "isFavorite": false,
-    "description": "All organism are composed of cells, cells are the smallest units of life, and new cells come from pre-existing cells",
+    "description": "writer",
     "wordset": [
       {
         "word1": "cool story bro",

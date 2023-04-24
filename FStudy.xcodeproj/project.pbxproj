@@ -27,6 +27,9 @@
 		4347ABA5299C335900B3FA78 /* buttonpractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347ABA4299C335900B3FA78 /* buttonpractice.swift */; };
 		4352915229C8968300E28427 /* wordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4352915129C8968300E28427 /* wordRow.swift */; };
 		4352915429C8A0E400E28427 /* WordsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4352915329C8A0E400E28427 /* WordsList.swift */; };
+		4388288B29F60CD700E9AB44 /* cardData2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4388288A29F607DB00E9AB44 /* cardData2.json */; };
+		4388288D29F60E0A00E9AB44 /* cardData3.json in Resources */ = {isa = PBXBuildFile; fileRef = 4388288C29F60E0700E9AB44 /* cardData3.json */; };
+		4388288F29F6110B00E9AB44 /* StudyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4388288E29F6110B00E9AB44 /* StudyList.swift */; };
 		43F37C4529B76ABE00B205F8 /* WordsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F37C4429B76ABE00B205F8 /* WordsDetail.swift */; };
 		43F4A37E29A3D68A0073C3CE /*  newCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F4A37D29A3D68A0073C3CE /*  newCard.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +75,9 @@
 		4347ABA4299C335900B3FA78 /* buttonpractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonpractice.swift; sourceTree = "<group>"; };
 		4352915129C8968300E28427 /* wordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordRow.swift; sourceTree = "<group>"; };
 		4352915329C8A0E400E28427 /* WordsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsList.swift; sourceTree = "<group>"; };
+		4388288A29F607DB00E9AB44 /* cardData2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cardData2.json; sourceTree = "<group>"; };
+		4388288C29F60E0700E9AB44 /* cardData3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cardData3.json; sourceTree = "<group>"; };
+		4388288E29F6110B00E9AB44 /* StudyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyList.swift; sourceTree = "<group>"; };
 		43F37C4429B76ABE00B205F8 /* WordsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsDetail.swift; sourceTree = "<group>"; };
 		43F4A37D29A3D68A0073C3CE /*  newCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " newCard.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,6 +174,7 @@
 				4352915329C8A0E400E28427 /* WordsList.swift */,
 				4347AB57299974EE00B3FA78 /* CardsRow.swift */,
 				4347AB982999A36D00B3FA78 /* CardsList.swift */,
+				4388288E29F6110B00E9AB44 /* StudyList.swift */,
 				4347AB9A2999A3AF00B3FA78 /* CardsDetail.swift */,
 				4347ABA0299A9A2900B3FA78 /* NoteCardFlip.swift */,
 				43F4A37D29A3D68A0073C3CE /*  newCard.swift */,
@@ -192,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				4347AB5B29999D7900B3FA78 /* cardData.json */,
+				4388288A29F607DB00E9AB44 /* cardData2.json */,
+				4388288C29F60E0700E9AB44 /* cardData3.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -212,6 +221,8 @@
 			dependencies = (
 			);
 			name = FStudy;
+			packageProductDependencies = (
+			);
 			productName = FStudy;
 			productReference = 4347AB2129996F7800B3FA78 /* FStudy.app */;
 			productType = "com.apple.product-type.application";
@@ -284,6 +295,8 @@
 				Base,
 			);
 			mainGroup = 4347AB1829996F7800B3FA78;
+			packageReferences = (
+			);
 			productRefGroup = 4347AB2229996F7800B3FA78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,10 +313,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4388288B29F60CD700E9AB44 /* cardData2.json in Resources */,
 				4347AB2C29996F7E00B3FA78 /* Preview Assets.xcassets in Resources */,
 				4347AB2929996F7E00B3FA78 /* Assets.xcassets in Resources */,
 				4347AB5C29999D7900B3FA78 /* cardData.json in Resources */,
 				4347AB9D299A868B00B3FA78 /* student.json in Resources */,
+				4388288D29F60E0A00E9AB44 /* cardData3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +358,7 @@
 				4347AB2729996F7800B3FA78 /* ContentView.swift in Sources */,
 				4347AB2529996F7800B3FA78 /* FStudyApp.swift in Sources */,
 				4347AB992999A36D00B3FA78 /* CardsList.swift in Sources */,
+				4388288F29F6110B00E9AB44 /* StudyList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

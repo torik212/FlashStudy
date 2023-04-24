@@ -20,13 +20,7 @@
 //}
 import Foundation
 import SwiftUI
-import CoreLocation
 
-struct Coordinates: Hashable, Codable {
-    var longitude: Double
-    var latitude: Double
-
-}
 struct Wordsets: Hashable, Codable, Identifiable{
     var word1: String
     var def: String
@@ -36,11 +30,8 @@ struct Wordsets: Hashable, Codable, Identifiable{
 struct Cardset: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
-    var park: String
     var description: String
     var isFavorite: Bool
-
-    var coordinates: Coordinates
     var wordset: [Wordsets]
     //var wordsets: [Wordsets]
     //var observations: [Observation]

@@ -71,7 +71,7 @@ struct WordsetDetail: View {
                 //Text("About \(cardset.name)")
                   //  .font(.title2)
                 Text(cardset.description)
-                Text("About \(cardset.coordinates.latitude)")
+                //Text("About \(cardset.coordinates.latitude)")
             }
             .padding()
         }

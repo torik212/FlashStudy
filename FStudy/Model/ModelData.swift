@@ -11,7 +11,8 @@ import Combine
 final class ModelData: ObservableObject {
     //@Published var cardsets: [Cardset] = load("cardData.json")
     @Published var cardsets: [Cardset] = load("cardData.json")
-    
+    //@Published var cardsets2: [Cardset] = load("cardData2.json")
+
     //@Published var cK: [Cardset] = load("student.json")
     
     //var hikes: [Hike] = load("hikeData.json")
