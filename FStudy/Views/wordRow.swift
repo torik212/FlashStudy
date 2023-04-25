@@ -9,8 +9,6 @@ import SwiftUI
 
 struct WordRow: View {
     var cardset: Cardset
-    var wordset: Wordsets
-    
     var body: some View {
         HStack {
             Text(cardset.name)
@@ -22,8 +20,7 @@ struct WordRow: View {
 
 struct WordRow_Previews: PreviewProvider {
     static var cardsets = ModelData().cardsets
-    static var wordsets = ModelData().cardsets[0].wordset
     static var previews: some View {
-        WordRow(cardset:cardsets[0], wordset: wordsets[0])
+        WordRow(cardset:cardsets[0])
     }
 }

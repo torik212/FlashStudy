@@ -51,10 +51,7 @@ struct newCard: View {
                           primaryButton: .default(Text("Save"), action: {
                             do {
                                 let dictionary = Dictionary(uniqueKeysWithValues: words.map{ ($0.word, $0.def) })
-                                let fileURL = try FileManager.default
-                                    .url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-                                    .appendingPathComponent("\(fileName).json")
-
+                                let fileURL = URL(fileURLWithPath: "/Users/torikestel/Documents/trialHere/FStudy/FStudy/Resources/example.json")
                                 try JSONSerialization.data(withJSONObject: dictionary)
                                     .write(to: fileURL)
                                 print("File created at: \(fileURL.path)")

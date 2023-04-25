@@ -4,74 +4,34 @@
     "id": 1001,
     "isFeatured": true,
     "isFavorite": false,
-    "description": "lawyer",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "lawyer"
   },
   {
     "name": "bombero",
     "id": 1002,
     "isFeatured": false,
     "isFavorite": false,
-    "description": "firefighter",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "firefighter"
   },
   {
     "name": "camarero",
     "id": 1003,
     "isFeatured": false,
     "isFavorite": true,
-    "description": "waiter",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "waiter"
   },
   {
     "name": "cartero",
     "id": 1004,
     "isFeatured": true,
     "isFavorite": true,
-    "description": "mail man",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "mail man"
   },
   {
     "name": "escritor",
     "id": 1005,
     "isFeatured": false,
     "isFavorite": false,
-    "description": "writer",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "writer"
   }
 ]

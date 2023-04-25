@@ -26,13 +26,6 @@ struct CardsetRow: View {
 struct CardsetRow_Previews: PreviewProvider {
     static var cardsets = ModelData().cardsets
     static var previews: some View {
-//        Group {
-//            CardsetRow(cardset: cardsets[0])
-//            CardsetRow(cardset: cardsets[1])
-//            CardsetRow(cardset: cardsets[2])
-//        }
         CardsetRow(cardset: cardsets[0])
-           // .environmentObject(ModelData())
-           // .previewLayout(.fixed(width:300, height: 70))
     }
 }

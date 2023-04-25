@@ -10,8 +10,6 @@ import SwiftUI
 struct CardsetDetail: View {
     @EnvironmentObject var modelData: ModelData
     var cardset: Cardset
-    //var wordset: Wordsets
-    
     var cardsetIndex: Int {
         modelData.cardsets.firstIndex(where: {$0.id == cardset.id})!
     }
@@ -25,23 +23,14 @@ struct CardsetDetail: View {
                     FavoriteButton(isSet: $modelData.cardsets[cardsetIndex].isFavorite)
                 }
                 HStack {
-                    //Text(cardset.park)
-                        //.font(.subheadline)
                     Spacer()
-                    //Text(cardset.state)
-                      //  .font(.subheadline)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 
                 Divider()
-
-                //Text("About \(cardset.name)")
-                  //  .font(.title2)
                 Text(cardset.description)
-                //Text("About \(cardset.coordinates.latitude)")
-                //Text("\(cardset.wordset.debugDescription)")
-                //Text("\(cardset.wordset[0].word1)")
+
             }
             
             .padding()

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>27923436367-ftsq48nrqkmmbuqls0dib2td4sjrafnb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.27923436367-ftsq48nrqkmmbuqls0dib2td4sjrafnb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAhbUcYj90WsUDGq_3SXG7ZPVOgHE4KPLQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>27923436367</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>torik.FStudy</string>
+	<key>PROJECT_ID</key>
+	<string>fstudyprod</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fstudyprod.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:27923436367:ios:0e96efd2cf26a83bc52b3a</string>
+</dict>
+</plist>

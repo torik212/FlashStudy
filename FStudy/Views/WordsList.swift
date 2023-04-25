@@ -15,8 +15,6 @@ struct WordsList: View {
             (!showFavoritesOnly || cardset.isFavorite)
         }
     }
-    
-
     var body: some View {
         NavigationView {
             List {
@@ -25,7 +23,6 @@ struct WordsList: View {
                 }
                 ForEach(filteredCardsets) { cardset in
                     NavigationLink {
-//                            WordsetDetail(cardset: cardset, wordset: wordsets)
                     } label: {
                         CardsetRow(cardset: cardset)
                     }

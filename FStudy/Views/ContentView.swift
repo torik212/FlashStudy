@@ -32,6 +32,11 @@ struct ContentView: View {
                     Image(systemName: "plus")
                     Text("New")
                 }
+            StudyChoice()
+                    .tabItem(){
+                        Image(systemName:"note")
+                       Text("Learn")
+                    }
             
         }
     }

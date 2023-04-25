@@ -4,74 +4,34 @@
     "id": 1001,
     "isFeatured": true,
     "isFavorite": false,
-    "description": "The process of change that has transformed.",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "The process of change that has transformed."
   },
   {
     "name": "Organism",
     "id": 1002,
     "isFeatured": false,
     "isFavorite": false,
-    "description": "a living thing that had the ability to act or function independently",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "a living thing that had the ability to act or function independently"
   },
   {
     "name": "Hydrophobic",
     "id": 1003,
     "isFeatured": false,
     "isFavorite": true,
-    "description": "Water Fearing ",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "Water Fearing "
   },
   {
     "name": "Multicellular organisms",
     "id": 1004,
     "isFeatured": true,
     "isFavorite": true,
-    "description": "plants, animals,etc. that contain many cells",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "plants, animals,etc. that contain many cells"
   },
   {
     "name": "Cell Theory",
     "id": 1005,
     "isFeatured": false,
     "isFavorite": false,
-    "description": "All organism are composed of cells, cells are the smallest units of life, and new cells come from pre-existing cells",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "All organism are composed of cells, cells are the smallest units of life, and new cells come from pre-existing cells"
   }
 ]

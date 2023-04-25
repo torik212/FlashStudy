@@ -10,7 +10,6 @@ import SwiftUI
 struct WordsetDetail: View {
     @EnvironmentObject var modelData: ModelData
     var cardset: Cardset
-    var wordset: Wordsets
     @State private var showFavoritesOnly = false
 
     
@@ -22,21 +21,6 @@ struct WordsetDetail: View {
             (!showFavoritesOnly || cardset.isFavorite)
         }
     }
-//    var wordsetIndex: Int {
-//        modelData.cardset.wordset.firstIndex(where: {$0.id == wordset.id})!
-////        modelData.cardsets.wordset.firstIndex(where:{$0.id == wordset.id})!
-//    }
-    
-//    var bothIndex: (outer: Int?, inner: Int?) {
-//        guard let outerIndex: Int = arr.firstIndex(where: { $0.contains(where: { $0.0 == "dd"}) }) else {
-//            assertionFailure()
-//            return (nil,nil)
-//        }
-//
-//        let innerIndex: Int? = arr[outerIndex].firstIndex(where: { $0.0 == "dd"})
-//        return (outerIndex, innerIndex)
-//    }
-    
     var body: some View {
         ScrollView {
             NavigationView {
@@ -57,21 +41,14 @@ struct WordsetDetail: View {
                     FavoriteButton(isSet: $modelData.cardsets[cardsetIndex].isFavorite)
                 }
                 HStack {
-                    //Text(cardset.park)
-                        //.font(.subheadline)
                     Spacer()
-                    //Text(cardset.state)
-                      //  .font(.subheadline)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 
                 Divider()
-
-                //Text("About \(cardset.name)")
-                  //  .font(.title2)
                 Text(cardset.description)
-                //Text("About \(cardset.coordinates.latitude)")
+
             }
             .padding()
         }
@@ -84,9 +61,7 @@ struct WordsetDetail: View {
 
 struct WordsetDetail_Previews: PreviewProvider {
     static let modelData = ModelData()
-
     static var previews: some View {
-        WordsetDetail(cardset: modelData.cardsets[0], wordset: modelData.cardsets[0].wordset[0])
-            .environmentObject(modelData)
+        WordsetDetail(cardset: modelData.cardsets[0])
     }
 }

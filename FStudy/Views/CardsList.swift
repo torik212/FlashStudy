@@ -32,7 +32,6 @@ struct CardsetList: View {
        }
 
     var body: some View {
-        NavigationView {
             List {
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites only")
@@ -46,8 +45,6 @@ struct CardsetList: View {
                 }
             }
             .navigationTitle(studySet)
-        }
-       // .navigationBarBackButtonHidden(true)
     }
 }
 

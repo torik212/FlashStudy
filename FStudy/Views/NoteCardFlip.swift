@@ -11,14 +11,14 @@ struct NoteCardFlip: View  {
     static var cardsets = ModelData().cardsets
     @EnvironmentObject var modelData: ModelData
     @State private var showDetails = false
-    @State private var counter = 0 // << declare counter as a State variable
+    @State private var counter = 0
     @State private var cardsetData: [Cardset] = NoteCardFlip.cardsets
     var cardset: Cardset {
         return cardsetData[counter % cardsetData.count]
-    } // << access the next cardset using the counter
+    }
     
     let menuItems = ["Biology 1", "English Test 1", "Spanish Test3", "Cards 4"]
-        @State private var selectedMenuItem = "Biology 1" // default selected menu item
+        @State private var selectedMenuItem = "Biology 1" 
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -70,9 +70,8 @@ struct NoteCardFlip: View  {
                         .font(.body)
                         .foregroundColor(Color.black)
                         .multilineTextAlignment(.center)
-                        .frame(maxWidth: 420)
+                        .frame(maxWidth: 400)
                 }
-                
             }
             .padding(-80.0)
         }

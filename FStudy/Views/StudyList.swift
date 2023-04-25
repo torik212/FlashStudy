@@ -9,20 +9,23 @@ import SwiftUI
 
 struct StudyList: View {
     @EnvironmentObject var modelData: ModelData
-    let studySets = ["Biology 1", "English Test 1", "Spanish Test3", "Cards 4"]
+    @State private var studySets = ["Biology 1", "English Test 1", "Spanish Test3", "Cards 4"]
 
     var body: some View {
-            NavigationView {
-                List {
-                    ForEach(studySets, id: \.self) { studySet in
-                        NavigationLink(destination: CardsetList(studySet: studySet)) {
-                            Text(studySet)
-                        }
+        NavigationView {
+            List {
+                ForEach(studySets, id: \.self) { studySet in
+                    NavigationLink(destination: CardsetList(studySet: studySet)) {
+                        Text(studySet)
                     }
                 }
-                .navigationTitle("Study Sets")
+                .onDelete { offsets in
+                    studySets.remove(atOffsets: offsets)
+                }
             }
+            .navigationTitle("Study Sets")
         }
+    }
 }
 
 struct StudyList_Previews: PreviewProvider {

@@ -21,20 +21,11 @@
 import Foundation
 import SwiftUI
 
-struct Wordsets: Hashable, Codable, Identifiable{
-    var word1: String
-    var def: String
-    var id: Int
-    var isFav: Bool
-}
 struct Cardset: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     var description: String
     var isFavorite: Bool
-    var wordset: [Wordsets]
-    //var wordsets: [Wordsets]
-    //var observations: [Observation]
 
 }
 

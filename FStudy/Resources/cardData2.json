@@ -4,74 +4,34 @@
     "id": 1001,
     "isFeatured": true,
     "isFavorite": false,
-    "description": "to make or become smaller or less.",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "to make or become smaller or les."
   },
   {
     "name": "measure",
     "id": 1002,
     "isFeatured": false,
     "isFavorite": false,
-    "description": "an amount or degree of something",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "an amount or degree of something"
   },
   {
     "name": "involve",
     "id": 1003,
     "isFeatured": false,
     "isFavorite": true,
-    "description": "to relate or include",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "to relate or include"
   },
   {
     "name": "movement",
     "id": 1004,
     "isFeatured": true,
     "isFavorite": true,
-    "description": "the act of moving from one place or position to another",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "the act of moving from one place or position to another"
   },
   {
     "name": "Region",
     "id": 1005,
     "isFeatured": false,
     "isFavorite": false,
-    "description": "an area or part of the country or body that is different from other parts",
-    "wordset": [
-      {
-        "word1": "cool story bro",
-        "def": "get out of here",
-        "id": 2002,
-        "isFav": true
-      }
-    ]
+    "description": "an area body that is different from other parts"
   }
 ]
